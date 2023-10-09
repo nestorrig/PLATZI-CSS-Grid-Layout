@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    > section {
+        padding: 48px;
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}
+
+.reto_areas {
+    .container {
+        width: 600px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "card_1 card_2"
+            "card_3 card_3";
+
+        
+        .item_1 {
+            grid-area: card_1;
+            background-color: red;
+        }
+        .item_2 {
+            grid-area: card_2;
+            background-color: yellow;
+        }
+        .item_3 {
+            grid-area: card_3;
+            background-color: blue;
+        }
+    }
+}
